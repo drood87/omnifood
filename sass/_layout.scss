@@ -1,5 +1,8 @@
-.container {
-	max-width: 100%;
+.header-container {
+	max-width: 120rem;
+	margin: 0 auto;
+	height: 100vh;
+	overflow: hidden;
 }
 
 .header {
@@ -9,12 +12,10 @@
 	background-repeat: no-repeat;
 	width: 100vw;
 	height: 100vh;
+}
 
+.flex-container {
 	display: flex;
-	justify-content: center;
+	height: calc(100vh - 24rem);
 	align-items: center;
-
-	&__box {
-		max-width: 70vw;
-	}
 }

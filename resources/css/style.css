@@ -19,8 +19,11 @@ html {
 body {
   box-sizing: border-box; }
 
-.container {
-  max-width: 100%; }
+.header-container {
+  max-width: 120rem;
+  margin: 0 auto;
+  height: 100vh;
+  overflow: hidden; }
 
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./img/hero.jpg");
@@ -28,12 +31,12 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 100vh;
+  height: 100vh; }
+
+.flex-container {
   display: flex;
-  justify-content: center;
+  height: calc(100vh - 24rem);
   align-items: center; }
-  .header__box {
-    max-width: 70vw; }
 
 .btn:link, .btn:visited {
   display: inline-block;
@@ -49,7 +52,8 @@ body {
   background-color: var(--color-primary);
   color: #fff;
   position: relative;
-  border: 1px solid var(--color-primary); }
+  border: 1px solid var(--color-primary);
+  margin-right: 2rem; }
 
 .btn--full::before {
   content: '';
@@ -82,6 +86,7 @@ body {
 
 .btn--ghost::before {
   content: '';
+  display: block;
   width: 40%;
   position: absolute;
   height: 0;
@@ -100,6 +105,40 @@ body {
   height: 100%;
   width: 100%;
   transform: scaleY(1); }
+
+.logo-box {
+  height: 10rem;
+  width: auto; }
+
+.user-nav {
+  display: flex;
+  justify-content: space-between;
+  word-spacing: 2.5px;
+  margin-top: 4rem; }
+  .user-nav__logo {
+    height: 10rem;
+    width: auto; }
+
+.main-nav {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: flex-start;
+  list-style: none; }
+  .main-nav__link:link, .main-nav__link:visited {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    transition: all 0.2s; }
+  .main-nav__link:link::after, .main-nav__link:visited::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid var(--color-primary);
+    transform: scaleX(0);
+    transition: transform 0.25s ease-in-out; }
+  .main-nav__link:hover::after, .main-nav__link:active::after {
+    transform: scaleX(1); }
 
 .heading-1 {
   text-transform: uppercase;

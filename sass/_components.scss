@@ -1,3 +1,7 @@
+////////////////////////////////////////////////
+// BUTTON STYLES
+///////////////////////////////////////////////
+
 .btn {
 	&:link,
 	&:visited {
@@ -17,10 +21,7 @@
 		position: relative;
 		border: 1px solid var(--color-primary);
 
-		// &:hover,
-		// &:active {
-		// 	border: 1px solid var(--color-primary-darker);
-		// }
+		margin-right: 2rem;
 	}
 
 	&--full::before {
@@ -60,6 +61,7 @@
 
 	&--ghost::before {
 		content: '';
+		display: block;
 		width: 40%;
 		position: absolute;
 		height: 0;
@@ -80,4 +82,69 @@
 		width: 100%;
 		transform: scaleY(1);
 	}
+}
+
+////////////////////////////////////////////////
+// LOGO AND MAIN NAV STYLES
+///////////////////////////////////////////////
+.logo-box {
+	height: 10rem;
+	width: auto;
+}
+
+////////////////////////////////////////////////
+// HEADER NAVIGATION
+///////////////////////////////////////////////
+
+.user-nav {
+	display: flex;
+	justify-content: space-between;
+	word-spacing: 2.5px;
+
+	margin-top: 4rem;
+
+	&__logo {
+		height: 10rem;
+		width: auto;
+	}
+}
+
+.main-nav {
+	display: flex;
+	width: 50%;
+	justify-content: space-around;
+	align-items: flex-start;
+	list-style: none;
+
+	&__item {
+	}
+
+	&__link:link,
+	&__link:visited {
+		text-decoration: none;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 1.5rem;
+
+		transition: all 0.2s;
+	}
+
+	&__link:link::after,
+	&__link:visited::after {
+		content: '';
+		display: block;
+		border-bottom: 2px solid var(--color-primary);
+		transform: scaleX(0);
+		transition: transform 0.25s ease-in-out;
+	}
+
+	&__link:hover::after,
+	&__link:active::after {
+		transform: scaleX(1);
+	}
+
+	// &__link:hover,
+	// &__link:active {
+	// 	border-bottom: 2px solid var(--color-primary);
+	// }
 }
