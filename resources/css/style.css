@@ -1,3 +1,7 @@
+:root {
+  --color-primary: #e67e22;
+  --color-primary-darker: #cf6d17; }
+
 *,
 *::after,
 *::before {
@@ -19,4 +23,91 @@ body {
   max-width: 100%; }
 
 .header {
-  max-width: 120rem; }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .header__box {
+    max-width: 70vw; }
+
+.btn:link, .btn:visited {
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 1.4rem;
+  border-radius: 100px;
+  z-index: 10;
+  color: #fff; }
+
+.btn--full {
+  background-color: var(--color-primary);
+  color: #fff;
+  position: relative;
+  border: 1px solid var(--color-primary); }
+
+.btn--full::before {
+  content: '';
+  width: 40%;
+  position: absolute;
+  height: 0;
+  border-radius: 100px;
+  top: 0;
+  left: 50%;
+  background-color: var(--color-primary-darker);
+  border: 1px solid var(--color-primary-darker);
+  transform: scaleY(0);
+  z-index: -1;
+  transform-origin: left;
+  transition: height cubic-bezier(1, 0, 0, 1) 0.3s, width 0.6s 0.4s, left 0.6s; }
+
+.btn--full:hover::before {
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: scaleY(1); }
+
+.btn--ghost {
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  position: relative; }
+  .btn--ghost:hover, .btn--ghost:active {
+    border: 1px solid var(--color-primary-darker);
+    color: #fff; }
+
+.btn--ghost::before {
+  content: '';
+  width: 40%;
+  position: absolute;
+  height: 0;
+  border-radius: 100px;
+  top: 0;
+  left: 50%;
+  background-color: var(--color-primary-darker);
+  border: 1px solid var(--color-primary-darker);
+  transform: scaleY(0);
+  z-index: -1;
+  transform-origin: left;
+  transition: height cubic-bezier(1, 0, 0, 1) 0.3s, width 0.6s 0.4s, left 0.6s; }
+
+.btn--ghost:hover::before {
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: scaleY(1); }
+
+.heading-1 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 1px;
+  word-spacing: 4px; }
+
+.mb-small {
+  margin-bottom: 2rem !important; }
