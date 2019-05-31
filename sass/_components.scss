@@ -13,6 +13,7 @@
 		border-radius: 100px;
 		z-index: 10;
 		color: #fff;
+		outline: none;
 	}
 
 	&--full {
@@ -20,67 +21,73 @@
 		color: #fff;
 		position: relative;
 		border: 1px solid var(--color-primary);
-
 		margin-right: 2rem;
+		overflow: hidden;
+		transition: color 0.4s ease-in-out;
+	}
+
+	&--full:hover {
+		cursor: pointer;
 	}
 
 	&--full::before {
 		content: '';
-		width: 40%;
 		position: absolute;
-		height: 0;
-		border-radius: 100px;
-		top: 0;
-		left: 50%;
+		border-radius: 50%;
+
 		background-color: var(--color-primary-darker);
 		border: 1px solid var(--color-primary-darker);
-		transform: scaleY(0);
+
+		bottom: 100%;
+		right: 100%;
+		width: 2em;
+		height: 1em;
+
 		z-index: -1;
-		transform-origin: left;
-		transition: height cubic-bezier(1, 0, 0, 1) 0.3s, width 0.6s 0.4s, left 0.6s;
+		transform-origin: center;
+		transform: translate(50%, 50%) scale(0);
+		transition: transform 0.45s ease-in-out;
 	}
 
 	&--full:hover::before {
-		left: 0;
-		height: 100%;
-		width: 100%;
-		transform: scaleY(1);
+		transform: translate(50%, 50%) scale(15);
 	}
 
 	&--ghost {
 		color: var(--color-primary);
 		border: 1px solid var(--color-primary);
 		position: relative;
+		overflow: hidden;
 
 		&:hover,
 		&:active {
 			border: 1px solid var(--color-primary-darker);
 			color: #fff;
+			cursor: pointer;
 		}
 	}
 
 	&--ghost::before {
 		content: '';
-		display: block;
-		width: 0;
 		position: absolute;
-		height: 0;
-		border-radius: 100px;
-		top: 50%;
-		left: 0;
+		border-radius: 50%;
+
 		background-color: var(--color-primary-darker);
 		border: 1px solid var(--color-primary-darker);
-		transform: scaleX(0);
+
+		bottom: 100%;
+		right: 100%;
+		width: 2em;
+		height: 1em;
+
 		z-index: -1;
-		// transform-origin: center;
-		transition: height 0.5s 0.25s, width 0.25s, top 0.6s 0.25s;
+		transform-origin: center;
+		transform: translate(50%, 50%) scale(0);
+		transition: transform 0.45s ease-in-out;
 	}
 
 	&--ghost:hover::before {
-		height: 100%;
-		width: 100%;
-		transform: scaleX(1);
-		top: 0;
+		transform: translate(50%, 50%) scale(15);
 	}
 }
 
@@ -101,7 +108,7 @@
 	justify-content: space-between;
 	word-spacing: 2.5px;
 
-	margin-top: 4rem;
+	padding-top: 4rem;
 
 	&__logo {
 		height: 10rem;
@@ -124,6 +131,8 @@
 		font-size: 1.5rem;
 	}
 
+	// BORDER BOTTOM MOVING OUTWARDS FROM MIDDLE
+
 	&__link:link::after,
 	&__link:visited::after {
 		content: '';
@@ -138,9 +147,37 @@
 	&__link:active::after {
 		transform: scaleX(1);
 	}
-
-	// &__link:hover,
-	// &__link:active {
-	// 	border-bottom: 2px solid var(--color-primary);
-	// }
 }
+
+////////////////////////////////////////////////
+// FEATURES SECTION
+///////////////////////////////////////////////
+
+.features {
+	&__text {
+		font-size: 2.3rem;
+		max-width: 70%;
+		margin-left: 15%;
+		line-height: 1.5;
+	}
+}
+
+.features-box {
+	&__icon {
+		font-size: 5rem;
+		color: var(--color-primary);
+		display: block;
+		font-weight: 100;
+
+		margin-bottom: 2rem;
+	}
+
+	&__text {
+		font-size: 1.5rem;
+		line-height: 1.5;
+	}
+}
+
+////////////////////////////////////////////////
+// FAVORITE MEALS
+///////////////////////////////////////////////

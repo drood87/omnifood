@@ -2,15 +2,17 @@
 	max-width: 120rem;
 	margin: 0 auto;
 	height: 100vh;
-	overflow: hidden;
 }
+////////////////////////////////////////////////
+// HEADER
+///////////////////////////////////////////////
 
 .header {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./img/hero.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	width: 100vw;
+	background-attachment: fixed;
 	height: 100vh;
 }
 
@@ -19,3 +21,19 @@
 	height: calc(100vh - 24rem);
 	align-items: center;
 }
+
+////////////////////////////////////////////////
+// FEATURES
+///////////////////////////////////////////////
+
+.features-grid {
+	max-width: 120rem;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	grid-gap: 3rem;
+}
+
+////////////////////////////////////////////////
+// FAVORITE MEALS
+///////////////////////////////////////////////
