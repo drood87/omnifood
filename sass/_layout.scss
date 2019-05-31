@@ -37,3 +37,9 @@
 ////////////////////////////////////////////////
 // FAVORITE MEALS
 ///////////////////////////////////////////////
+
+.favorite-meals {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 100%);
+}
