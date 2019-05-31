@@ -204,3 +204,62 @@
 		transform: scale(1);
 	}
 }
+
+////////////////////////////////////////////////
+// HOW IT WORKS STEPS
+///////////////////////////////////////////////
+
+.steps {
+	display: flex;
+	justify-content: flex-end;
+
+	&__img {
+		height: 40rem;
+		width: auto;
+		margin-right: 7rem;
+	}
+
+	&__works {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+
+		max-width: 48%;
+	}
+
+	&__box {
+		display: flex;
+		align-items: center;
+	}
+
+	&__number {
+		color: var(--color-primary);
+		border: 2px solid var(--color-primary);
+		border-radius: 50%;
+		justify-self: flex-start;
+		display: inline-block;
+		font-size: 3.3rem;
+		padding: 4px;
+		width: 5.5rem;
+		height: 5.5rem;
+		text-align: center;
+		margin-right: 2rem;
+	}
+
+	&__description {
+		font-size: 1.8rem;
+		width: 75%;
+	}
+
+	&__app-logo {
+		height: 5rem;
+	}
+
+	&__app-logo:first-child {
+		margin-right: 4rem;
+	}
+}
+
+////////////////////////////////////////////////
+// SECTION CITIES
+///////////////////////////////////////////////

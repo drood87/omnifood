@@ -49,6 +49,15 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr); }
 
+.how-to {
+  background-color: #f4f4f4;
+  max-width: 120rem;
+  margin: 0 auto; }
+
+.section-cities {
+  max-width: 120rem;
+  margin: 0 auto; }
+
 .btn:link, .btn:visited {
   display: inline-block;
   padding: 1rem 3rem;
@@ -186,6 +195,41 @@ body {
     height: 100%;
     width: 100%;
     transform: scale(1); }
+
+.steps {
+  display: flex;
+  justify-content: flex-end; }
+  .steps__img {
+    height: 40rem;
+    width: auto;
+    margin-right: 7rem; }
+  .steps__works {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 48%; }
+  .steps__box {
+    display: flex;
+    align-items: center; }
+  .steps__number {
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    border-radius: 50%;
+    justify-self: flex-start;
+    display: inline-block;
+    font-size: 3.3rem;
+    padding: 4px;
+    width: 5.5rem;
+    height: 5.5rem;
+    text-align: center;
+    margin-right: 2rem; }
+  .steps__description {
+    font-size: 1.8rem;
+    width: 75%; }
+  .steps__app-logo {
+    height: 5rem; }
+  .steps__app-logo:first-child {
+    margin-right: 4rem; }
 
 .heading-1,
 .heading-2,
