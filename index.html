@@ -539,9 +539,12 @@
           type="checkbox"
           name="newsletter"
           id="newsletter"
-          class="contact-form__input"
+          class="contact-form__input contact-form__input--check-box"
           checked
-        />Yes please
+        />
+        <span class="contact-form__input contact-form__input--check"
+          >Yes please</span
+        >
 
         <label for="message" class="contact-form__label">Drop us a line</label>
         <textarea
@@ -553,7 +556,11 @@
         ></textarea>
 
         <label for="submit" class="contact-form__label">&nbsp;</label>
-        <input type="submit" value="Send it" class="contact-form__submit"/>
+        <input
+          type="submit"
+          value="Send it"
+          class="contact-form__submit btn btn--full"
+        />
       </form>
     </section>
 
