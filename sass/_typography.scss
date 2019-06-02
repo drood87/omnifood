@@ -15,6 +15,11 @@
 .heading-2 {
 	font-size: 3.2rem;
 	word-spacing: 2px;
+
+	&--color {
+		color: #fff;
+		padding-top: 4rem;
+	}
 }
 
 .heading-2:after {

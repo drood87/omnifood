@@ -19,45 +19,6 @@ html {
 body {
   box-sizing: border-box; }
 
-.header-container {
-  max-width: 120rem;
-  margin: 0 auto;
-  height: 100vh; }
-
-.header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./img/hero.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100vh; }
-
-.flex-container {
-  display: flex;
-  height: calc(100vh - 24rem);
-  align-items: center; }
-
-.features-grid {
-  max-width: 120rem;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  grid-gap: 3rem; }
-
-.favorite-meals {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr); }
-
-.how-to {
-  background-color: #f4f4f4;
-  max-width: 120rem;
-  margin: 0 auto; }
-
-.section-cities {
-  max-width: 120rem;
-  margin: 0 auto; }
-
 .btn:link, .btn:visited {
   display: inline-block;
   padding: 1rem 3rem;
@@ -126,6 +87,52 @@ body {
 
 .btn--ghost:hover::before {
   transform: translate(50%, 50%) scale(15); }
+
+.header-container {
+  max-width: 120rem;
+  margin: 0 auto;
+  height: 100vh; }
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh; }
+
+.flex-container {
+  display: flex;
+  height: calc(100vh - 24rem);
+  align-items: center; }
+
+.features-grid {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 3rem; }
+
+.favorite-meals {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr); }
+
+.how-to {
+  background-color: #f4f4f4;
+  max-width: 120rem;
+  margin: 0 auto; }
+
+.section-cities {
+  max-width: 120rem;
+  margin: 0 auto; }
+
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./img/back-customers.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat; }
 
 .logo-box {
   height: 10rem;
@@ -280,6 +287,9 @@ body {
 .heading-2 {
   font-size: 3.2rem;
   word-spacing: 2px; }
+  .heading-2--color {
+    color: #fff;
+    padding-top: 4rem; }
 
 .heading-2:after {
   content: '';
