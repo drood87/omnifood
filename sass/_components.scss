@@ -119,6 +119,8 @@
 .steps {
 	display: flex;
 	justify-content: flex-end;
+	max-width: 120rem;
+	margin: 0 auto;
 
 	&__img {
 		height: 40rem;

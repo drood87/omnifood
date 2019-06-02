@@ -1,0 +1,27 @@
+.plans {
+	display: flex;
+	justify-content: space-around;
+
+	max-width: 120rem;
+	margin: 0 auto;
+	&__box {
+	}
+
+	&__price {
+		font-size: 1.4rem;
+		&--big {
+			font-size: 4rem;
+			color: var(--color-primary);
+		}
+	}
+
+	&__list {
+		list-style: none;
+	}
+
+	&__item {
+	}
+
+	&__icon {
+	}
+}
