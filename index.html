@@ -504,42 +504,56 @@
       </h2>
 
       <form action="GET" class="contact-form">
-        <label for="name">Name</label>
+        <label for="name" class="contact-form__label">Name</label>
         <input
           type="text"
           name="name"
           id="name"
-          placeholder="You're name"
+          placeholder="Your name"
           required
+          class="contact-form__input"
         />
 
-        <label for="email">Email</label>
+        <label for="email" class="contact-form__label">Email</label>
         <input
           type="email"
           name="email"
           id="email"
           placeholder="youremail@gmail.com"
           required
+          class="contact-form__input"
         />
 
-        <label for="find-us">How did you find us</label>
-        <select name="find-us" id="find-us">
+        <label for="find-us" class="contact-form__label"
+          >How did you find us</label
+        >
+        <select name="find-us" id="find-us" class="contact-form__input">
           <option value="friends" selected>Friends</option>
           <option value="search">Search Engine</option>
           <option value="ad">Advertisement</option>
           <option value="other">Other</option>
         </select>
 
-        <label for="newsletter">Newsletter?</label>
-        <input type="checkbox" name="newsletter" id="newsletter" checked />Yes
-        please
+        <label for="newsletter" class="contact-form__label">Newsletter?</label>
+        <input
+          type="checkbox"
+          name="newsletter"
+          id="newsletter"
+          class="contact-form__input"
+          checked
+        />Yes please
 
-        <label for="message">Drop us a line</label>
-        <textarea name="message" id="message" cols="30" rows="5"></textarea>
+        <label for="message" class="contact-form__label">Drop us a line</label>
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="5"
+          class="contact-form__input"
+        ></textarea>
 
-        <label for="submit">&nbsp;</label>
-        <input type="submit" value="Send it" />
-
+        <label for="submit" class="contact-form__label">&nbsp;</label>
+        <input type="submit" value="Send it" class="contact-form__submit"/>
       </form>
     </section>
 

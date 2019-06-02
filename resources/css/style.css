@@ -229,6 +229,14 @@ body {
     border-bottom: 1px solid var(--color-primary-darker);
     color: var(--color-primary-darker); }
 
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(2, max-content); }
+  .contact-form__label {
+    grid-column: 1 / 2; }
+  .contact-form__input {
+    grid-column: 2 / -1; }
+
 .header-container {
   max-width: 120rem;
   margin: 0 auto;

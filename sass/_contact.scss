@@ -1,0 +1,16 @@
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+
+  &__label {
+    grid-column: 1 / 2;
+  }
+
+  &__input {
+    grid-column: 2 / -1;
+  }
+
+  &__submit {
+    grid-column: 1 / 2;
+  }
+}
