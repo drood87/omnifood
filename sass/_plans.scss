@@ -1,27 +1,40 @@
 .plans {
-	display: flex;
-	justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 
-	max-width: 120rem;
-	margin: 0 auto;
-	&__box {
-	}
+  max-width: 120rem;
+  margin: 0 auto;
 
-	&__price {
-		font-size: 1.4rem;
-		&--big {
-			font-size: 4rem;
-			color: var(--color-primary);
-		}
-	}
+  &__box {
+    padding: 8rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-	&__list {
-		list-style: none;
-	}
+  &__price {
+    font-size: 1.4rem;
+    margin-bottom: 1.3rem;
+    justify-self: flex-start;
 
-	&__item {
-	}
+    &--big {
+      font-size: 4rem;
+      color: var(--color-primary);
+    }
+  }
 
-	&__icon {
-	}
+  &__list {
+    list-style: none;
+    font-size: 1.5rem;
+  }
+
+  &__item {
+    margin-bottom: 1.3rem;
+    display: flex;
+  }
+
+  &__icon {
+    margin-top: 3px;
+    color: var(--color-primary);
+  }
 }

@@ -27,7 +27,6 @@ body {
   font-size: 1.4rem;
   border-radius: 100px;
   z-index: 10;
-  color: #fff;
   outline: none; }
 
 .btn--full {
@@ -64,7 +63,8 @@ body {
   color: var(--color-primary);
   border: 1px solid var(--color-primary);
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  transition: all 0.45s ease-in-out; }
   .btn--ghost:hover, .btn--ghost:active {
     border: 1px solid var(--color-primary-darker);
     color: #fff;
@@ -83,10 +83,11 @@ body {
   z-index: -1;
   transform-origin: center;
   transform: translate(50%, 50%) scale(0);
-  transition: transform 0.45s ease-in-out; }
+  transition: all 0.45s ease-in-out; }
 
 .btn--ghost:hover::before {
-  transform: translate(50%, 50%) scale(15); }
+  transform: translate(50%, 50%) scale(15);
+  color: #fff; }
 
 .header-container {
   max-width: 120rem;
@@ -140,11 +141,27 @@ body {
   justify-content: space-around;
   max-width: 120rem;
   margin: 0 auto; }
+  .plans__box {
+    padding: 8rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
   .plans__price {
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    margin-bottom: 1.3rem;
+    justify-self: flex-start; }
     .plans__price--big {
       font-size: 4rem;
       color: var(--color-primary); }
+  .plans__list {
+    list-style: none;
+    font-size: 1.5rem; }
+  .plans__item {
+    margin-bottom: 1.3rem;
+    display: flex; }
+  .plans__icon {
+    margin-top: 3px;
+    color: var(--color-primary); }
 
 .testimonials {
   display: grid;
