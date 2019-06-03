@@ -3,8 +3,8 @@
   margin: 0 auto;
   height: 100vh;
 
-  @media only screen and (max-width: 75em) {
-    margin: 0 3rem;
+  @media only screen and (max-width: 59.5em) {
+    padding: 0 4rem;
   }
 }
 ////////////////////////////////////////////////
@@ -38,8 +38,8 @@
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 3rem;
 
-  @media only screen and (max-width: 75em) {
-    margin: 0 3rem;
+  @media only screen and (max-width: var(--bp-large)) {
+    padding: 0 3rem;
   }
 }
 

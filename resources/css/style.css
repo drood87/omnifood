@@ -1,7 +1,8 @@
 :root {
   --color-primary: #e67e22;
   --color-primary-darker: #cf6d17;
-  --bp-largest: 0px; }
+  --bp-largest: 75em;
+  --bp-large: 59.5em; }
 
 *,
 *::after,
@@ -19,7 +20,7 @@ html {
   font-family: 'Lato', 'Arial', sans-serif;
   font-weight: 300;
   text-rendering: optimizeLegibility; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: var(--bp-largest)) {
     html {
       font-size: 50%; } }
 
@@ -245,6 +246,9 @@ input[type='submit']:hover {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem; }
+    @media only screen and (max-width: var(--bp-large)) {
+      .footer__lists {
+        padding: 0 3rem; } }
     .footer__lists > * {
       list-style: none; }
   .footer__nav {
@@ -293,9 +297,9 @@ input[type='submit']:hover {
   max-width: 120rem;
   margin: 0 auto;
   height: 100vh; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 59.5em) {
     .header-container {
-      margin: 0 3rem; } }
+      padding: 0 4rem; } }
 
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./img/hero.jpg");
@@ -316,9 +320,9 @@ input[type='submit']:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 3rem; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: var(--bp-large)) {
     .features-grid {
-      margin: 0 3rem; } }
+      padding: 0 3rem; } }
 
 .favorite-meals {
   display: grid;
@@ -369,6 +373,10 @@ input[type='submit']:hover {
   justify-content: space-around;
   max-width: 100rem;
   margin: 0 auto; }
+  @media only screen and (max-width: var(--bp-largest)) {
+    .plans {
+      justify-content: space-between;
+      max-width: 70%; } }
   .plans__box {
     padding: 2rem;
     display: flex;
@@ -411,7 +419,8 @@ input[type='submit']:hover {
   position: relative;
   max-width: 120rem;
   margin: 0 auto;
-  color: #d6d6d6; }
+  color: #d6d6d6;
+  justify-items: center; }
   .testimonials__box {
     display: flex;
     flex-direction: column;

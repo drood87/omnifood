@@ -10,6 +10,10 @@
 
     margin-bottom: 2rem;
 
+    @media only screen and (max-width: var(--bp-large)) {
+      padding: 0 3rem;
+    }
+
     & > * {
       list-style: none;
     }
