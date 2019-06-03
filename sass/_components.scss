@@ -2,8 +2,8 @@
 // LOGO AND MAIN NAV STYLES
 ///////////////////////////////////////////////
 .logo-box {
-	height: 10rem;
-	width: auto;
+  height: 10rem;
+  width: auto;
 }
 
 ////////////////////////////////////////////////
@@ -11,49 +11,49 @@
 ///////////////////////////////////////////////
 
 .user-nav {
-	display: flex;
-	justify-content: space-between;
-	word-spacing: 2.5px;
+  display: flex;
+  justify-content: space-between;
+  word-spacing: 2.5px;
 
-	padding-top: 4rem;
+  padding-top: 4rem;
 
-	&__logo {
-		height: 10rem;
-		width: auto;
-	}
+  &__logo {
+    height: 10rem;
+    width: auto;
+  }
 }
 
 .main-nav {
-	display: flex;
-	width: 50%;
-	justify-content: space-around;
-	align-items: flex-start;
-	list-style: none;
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: flex-start;
+  list-style: none;
 
-	&__link:link,
-	&__link:visited {
-		text-decoration: none;
-		color: #fff;
-		text-transform: uppercase;
-		font-size: 1.5rem;
-	}
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
 
-	// BORDER BOTTOM MOVING OUTWARDS FROM MIDDLE
+  // BORDER BOTTOM MOVING OUTWARDS FROM MIDDLE
 
-	&__link:link::after,
-	&__link:visited::after {
-		content: '';
-		display: block;
-		border-bottom: 2px solid var(--color-primary);
-		transform: scaleX(0);
-		transition: transform 0.25s ease-in-out;
-		padding-top: 8px;
-	}
+  &__link:link::after,
+  &__link:visited::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid var(--color-primary);
+    transform: scaleX(0);
+    transition: transform 0.25s ease-in-out;
+    padding-top: 8px;
+  }
 
-	&__link:hover::after,
-	&__link:active::after {
-		transform: scaleX(1);
-	}
+  &__link:hover::after,
+  &__link:active::after {
+    transform: scaleX(1);
+  }
 }
 
 ////////////////////////////////////////////////
@@ -61,28 +61,28 @@
 ///////////////////////////////////////////////
 
 .features {
-	&__text {
-		font-size: 2.3rem;
-		max-width: 70%;
-		margin-left: 15%;
-		line-height: 1.5;
-	}
+  &__text {
+    font-size: 2.3rem;
+    max-width: 70%;
+    margin-left: 15%;
+    line-height: 1.5;
+  }
 }
 
 .features-box {
-	&__icon {
-		font-size: 5rem;
-		color: var(--color-primary);
-		display: block;
-		font-weight: 100;
+  &__icon {
+    font-size: 5rem;
+    color: var(--color-primary);
+    display: block;
+    font-weight: 100;
 
-		margin-bottom: 2rem;
-	}
+    margin-bottom: 2rem;
+  }
 
-	&__text {
-		font-size: 1.5rem;
-		line-height: 1.5;
-	}
+  &__text {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
 }
 
 ////////////////////////////////////////////////
@@ -90,26 +90,26 @@
 ///////////////////////////////////////////////
 
 .meal-img {
-	height: 100%;
-	width: 100%;
-	overflow: hidden;
-	background: #000;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
 
-	&__item {
-		opacity: 0.7;
-		height: 100%;
-		width: 100%;
-		object-fit: cover;
-		transform: scale(1.15);
-		transition: all ease-in-out 0.23s;
-	}
+  &__item {
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.15);
+    transition: all ease-in-out 0.23s;
+  }
 
-	&__item:hover {
-		opacity: 1;
-		height: 100%;
-		width: 100%;
-		transform: scale(1);
-	}
+  &__item:hover {
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    transform: scale(1);
+  }
 }
 
 ////////////////////////////////////////////////
@@ -117,56 +117,56 @@
 ///////////////////////////////////////////////
 
 .steps {
-	display: flex;
-	justify-content: flex-end;
-	max-width: 120rem;
-	margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 120rem;
+  margin: 0 auto;
 
-	&__img {
-		height: 40rem;
-		width: auto;
-		margin-right: 7rem;
-	}
+  &__img {
+    height: 40rem;
+    width: auto;
+    margin-right: 7rem;
+  }
 
-	&__works {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
+  &__works {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
-		max-width: 48%;
-	}
+    max-width: 48%;
+  }
 
-	&__box {
-		display: flex;
-		align-items: center;
-	}
+  &__box {
+    display: flex;
+    align-items: center;
+  }
 
-	&__number {
-		color: var(--color-primary);
-		border: 2px solid var(--color-primary);
-		border-radius: 50%;
-		justify-self: flex-start;
-		display: inline-block;
-		font-size: 3.3rem;
-		padding: 4px;
-		width: 5.5rem;
-		height: 5.5rem;
-		text-align: center;
-		margin-right: 2rem;
-	}
+  &__number {
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    border-radius: 50%;
+    justify-self: flex-start;
+    display: inline-block;
+    font-size: 3.3rem;
+    padding: 4px;
+    width: 5.5rem;
+    height: 5.5rem;
+    text-align: center;
+    margin-right: 2rem;
+  }
 
-	&__description {
-		font-size: 1.8rem;
-		width: 75%;
-	}
+  &__description {
+    font-size: 1.8rem;
+    width: 75%;
+  }
 
-	&__app-logo {
-		height: 5rem;
-	}
+  &__app-logo {
+    height: 5rem;
+  }
 
-	&__app-logo:first-child {
-		margin-right: 4rem;
-	}
+  &__app-logo:first-child {
+    margin-right: 4rem;
+  }
 }
 
 ////////////////////////////////////////////////
@@ -174,49 +174,49 @@
 ///////////////////////////////////////////////
 
 .cities-cards {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-	grid-gap: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-gap: 3rem;
 }
 
 .card {
-	&__img {
-		width: 100%;
-		object-fit: cover;
-		overflow: hidden;
-		margin-bottom: 1rem;
-	}
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
 
-	&__item {
-		display: flex;
-		align-items: center;
-	}
+  &__item {
+    display: flex;
+    align-items: center;
+  }
 
-	&__item:not(:last-of-type) {
-		margin-bottom: 0.5rem;
-	}
+  &__item:not(:last-of-type) {
+    margin-bottom: 0.5rem;
+  }
 
-	&__icon {
-		font-size: 2.5rem;
-		color: var(--color-primary);
-		margin-right: 1rem;
-	}
+  &__icon {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-right: 1rem;
+  }
 
-	&__text {
-		font-size: 1.8rem;
+  &__text {
+    font-size: 1.8rem;
 
-		&--link:link,
-		&--link:visited {
-			text-decoration: none;
-			border-bottom: 1px solid var(--color-primary);
-			color: var(--color-primary);
-		}
+    &--link:link,
+    &--link:visited {
+      text-decoration: none;
+      border-bottom: 1px solid var(--color-primary);
+      color: var(--color-primary);
+    }
 
-		&--link:hover,
-		&--link:active {
-			text-decoration: none;
-			border-bottom: 1px solid var(--color-primary-darker);
-			color: var(--color-primary-darker);
-		}
-	}
+    &--link:hover,
+    &--link:active {
+      text-decoration: none;
+      border-bottom: 1px solid var(--color-primary-darker);
+      color: var(--color-primary-darker);
+    }
+  }
 }

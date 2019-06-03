@@ -1,25 +1,26 @@
 .header-container {
-	max-width: 120rem;
-	margin: 0 auto;
-	height: 100vh;
+  max-width: 120rem;
+  margin: 0 auto;
+  height: 100vh;
 }
 ////////////////////////////////////////////////
 // HEADER
 ///////////////////////////////////////////////
 
 .header {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./img/hero.jpg');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('./img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
 }
 
 .flex-container {
-	display: flex;
-	height: calc(100vh - 24rem);
-	align-items: center;
+  display: flex;
+  height: calc(100vh - 24rem);
+  align-items: center;
 }
 
 ////////////////////////////////////////////////
@@ -27,11 +28,11 @@
 ///////////////////////////////////////////////
 
 .features-grid {
-	max-width: 120rem;
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-	grid-gap: 3rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 3rem;
 }
 
 ////////////////////////////////////////////////
@@ -39,9 +40,9 @@
 ///////////////////////////////////////////////
 
 .favorite-meals {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(2, 1fr);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 ////////////////////////////////////////////////
@@ -49,7 +50,7 @@
 ///////////////////////////////////////////////
 
 .how-to {
-	background-color: #f4f4f4;
+  background-color: #f4f4f4;
 }
 
 ////////////////////////////////////////////////
@@ -57,8 +58,8 @@
 ///////////////////////////////////////////////
 
 .section-cities {
-	max-width: 120rem;
-	margin: 0 auto;
+  max-width: 120rem;
+  margin: 0 auto;
 }
 
 ////////////////////////////////////////////////
@@ -66,11 +67,12 @@
 ///////////////////////////////////////////////
 
 .section-testimonials {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./img/back-customers.jpg');
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('./img/back-customers.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 ////////////////////////////////////////////////
@@ -78,5 +80,14 @@
 ///////////////////////////////////////////////
 
 .section-plans {
-	background-color: #f4f4f4;
+  background-color: #f4f4f4;
+}
+
+////////////////////////////////////////////////
+// SECTION FOOTER
+///////////////////////////////////////////////
+
+.section-footer {
+  background-color: #333444;
+  padding-bottom: 3rem;
 }

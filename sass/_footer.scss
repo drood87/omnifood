@@ -1,0 +1,92 @@
+.footer {
+  max-width: 120rem;
+  margin: 0 auto;
+  list-style: none;
+  font-size: 2rem;
+
+  &__lists {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 2rem;
+
+    & > * {
+      list-style: none;
+    }
+  }
+
+  &__nav {
+    display: grid;
+    grid-template-columns: repeat(5, max-content);
+    grid-gap: 2.4rem;
+  }
+
+  &__item {
+    &--social {
+    }
+  }
+
+  &__socials {
+    display: grid;
+    grid-template-columns: repeat(5, max-content);
+    grid-gap: 2.4rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: #c4c4c4;
+    }
+
+    &--nav {
+      transition: all 0.15s;
+      padding: 0.7rem;
+      display: inline-block;
+      border-radius: 6px;
+
+      &:hover {
+        background-color: var(--color-primary);
+        transform: rotate(-5deg) scale(1.1);
+        box-shadow: 1px 1px 30px #000;
+      }
+    }
+  }
+
+  &__icon {
+    font-size: 2.5rem;
+    transition: all 0.2s;
+    display: inline-block;
+
+    &:hover {
+      transform: scale(1.3);
+    }
+
+    &--fb:hover {
+      color: #4267b2;
+    }
+
+    &--twitter:hover {
+      color: #38a1f3;
+    }
+
+    &--gplus:hover {
+      color: #dd4b39;
+    }
+
+    &--insta:hover {
+      color: #231f20;
+    }
+
+    &--github:hover {
+      color: #333;
+    }
+  }
+
+  &__copyright {
+    color: #c4c4c4;
+    font-size: 1.2rem;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
