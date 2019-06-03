@@ -1,6 +1,8 @@
 :root {
   --color-primary: #e67e22;
   --color-primary-darker: #cf6d17;
+
+  --bp-largest: 0px;
 }
 
 *,
@@ -21,6 +23,10 @@ html {
   font-family: 'Lato', 'Arial', sans-serif;
   font-weight: 300;
   text-rendering: optimizeLegibility;
+
+  @media only screen and (max-width: 75em) {
+    font-size: 50%;
+  }
 }
 
 body {
