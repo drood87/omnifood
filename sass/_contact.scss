@@ -21,6 +21,8 @@
 
     padding: 1.3rem;
     border: 1px solid #acacac;
+    font-family: inherit;
+    border-radius: 3px;
 
     &--check {
       grid-column: 2 / -1;
@@ -28,6 +30,7 @@
       justify-self: left;
       margin-left: 2rem;
       border: none;
+      font-size: 1.6rem;
     }
 
     &--check-box {
@@ -41,3 +44,52 @@
     grid-column: 2 / 3;
   }
 }
+
+input[type='submit'] {
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 1.6rem;
+  border-radius: 100px;
+  z-index: 10;
+
+  outline: none;
+  background-color: var(--color-primary);
+  color: #fff;
+  position: relative;
+  border: 1px solid var(--color-primary);
+  margin-right: 2rem;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+input[type='submit']:hover {
+  background-color: var(--color-primary-darker);
+  border: 1px solid var(--color-primary-darker);
+  cursor: pointer;
+}
+
+// input[type='submit']::before {
+//   content: '';
+//   position: absolute;
+//   border-radius: 50%;
+
+//   background-color: var(--color-primary-darker);
+//   border: 1px solid var(--color-primary-darker);
+
+//   bottom: 100%;
+//   right: 100%;
+//   width: 2em;
+//   height: 1em;
+
+//   z-index: -1;
+//   transform-origin: center;
+//   transform: translate(50%, 50%) scale(0);
+//   transition: transform 0.45s ease-in-out;
+// }
+
+// input[type='submit']:hover::before,
+// input[type='submit']:active::before {
+//   transform: translate(50%, 50%) scale(15);
+// }
