@@ -12,8 +12,17 @@
 
   font-size: 2rem;
 
+  @media only screen and (max-width: $bp-almost-smallest-480) {
+    grid-template-columns: max-content;
+    grid-template-rows: repeat(11, max-content);
+  }
+
   &__label {
     grid-column: 1 / 2;
+
+    @media only screen and (max-width: $bp-almost-smallest-480) {
+      grid-column: 1 / -1;
+    }
   }
 
   &__input {
@@ -24,24 +33,42 @@
     font-family: inherit;
     border-radius: 3px;
 
-    &--check {
+    @media only screen and (max-width: $bp-almost-smallest-480) {
+      grid-column: 1 / -1;
+    }
+
+    &--check-label {
       grid-column: 2 / -1;
       grid-row: 4 / 5;
       justify-self: left;
       margin-left: 2rem;
       border: none;
       font-size: 1.6rem;
+
+      @media only screen and (max-width: $bp-almost-smallest-480) {
+        grid-row: 8 / 9;
+        grid-column: 1 / -1;
+      }
     }
 
     &--check-box {
       grid-column: 2 / -1;
       grid-row: 4 / 5;
       justify-self: left;
+
+      @media only screen and (max-width: $bp-almost-smallest-480) {
+        grid-row: 8 / 9;
+        grid-column: 1 / -1;
+      }
     }
   }
 
   &__submit {
     grid-column: 2 / 3;
+
+    @media only screen and (max-width: $bp-almost-smallest-480) {
+      grid-column: 1 / -1;
+    }
   }
 }
 

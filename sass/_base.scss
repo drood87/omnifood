@@ -5,13 +5,14 @@
 
 // BREAKPOINTS
 
-$bp-largest: 75em;
-$bp-large: 59.5em;
-$bp-medium: 50em;
-$bp-medium-725: 45.3125em;
-$bp-small: 41.875em;
-$bp-smaller: 34.375em;
-$bp-smallest: 26.875em; //430px
+$bp-largest: 75em; // 1200px
+$bp-large: 59.5em; // 952px
+$bp-medium: 50em; // 800px
+$bp-medium-725: 45.3125em; // 725px
+$bp-small: 41.875em; // 670px
+$bp-smaller: 34.375em; // 550px
+$bp-almost-smallest-480: 30em; //480px
+$bp-smallest: 26.875em; // 430px
 
 // BASETYLES
 
