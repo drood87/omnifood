@@ -14,12 +14,19 @@
   <body>
     <header class="header mb-large">
       <div class="header-container">
-        <nav class="user-nav">
+        <nav class="user-nav" id="nav-hook">
           <div class="user-nav__logo-box">
             <img
               src="./resources/css/img/logo-white.png"
               alt="Omnifood Logo"
               class="user-nav__logo"
+              id="logo-white"
+            />
+            <img
+              src="./resources/css/img/logo.png"
+              alt="Omnifood Logo"
+              class="user-nav__logo user-nav__logo--black"
+              id="logo-black"
             />
           </div>
 
@@ -643,15 +650,6 @@
     </footer>
 
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script src="./resources/js/stick-nav.js"></script>
   </body>
 </html>
-
-<!-- Navigation:
-1. About us
-2. Blog
-3. Press
-4. iOS App
-5. Android App
-
-Also include links to facebook, twitter, google+ and Instagram accounts.
- -->

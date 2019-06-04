@@ -20,6 +20,14 @@
   &__logo {
     height: 10rem;
     width: auto;
+
+    &--white {
+      display: none;
+    }
+
+    &--black {
+      display: none;
+    }
   }
 }
 
@@ -53,5 +61,33 @@
   &__link:hover::after,
   &__link:active::after {
     transform: scaleX(1);
+  }
+}
+
+// dynamic styles for fixed nav
+
+.fixed-nav .header .header-container nav {
+  color: #555;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #f4f4f4;
+  margin: 0 auto;
+  padding: 1.1rem 3rem;
+  z-index: 100;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+
+  & .user-nav__logo {
+    height: 6rem;
+  }
+
+  & .main-nav {
+    align-items: center;
+
+    &__link:link,
+    &__link:visited {
+      color: #555;
+    }
   }
 }
