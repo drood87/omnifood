@@ -1,8 +1,6 @@
 :root {
   --color-primary: #e67e22;
-  --color-primary-darker: #cf6d17;
-  --bp-largest: 75em;
-  --bp-large: 59.5em; }
+  --color-primary-darker: #cf6d17; }
 
 *,
 *::after,
@@ -20,7 +18,7 @@ html {
   font-family: 'Lato', 'Arial', sans-serif;
   font-weight: 300;
   text-rendering: optimizeLegibility; }
-  @media only screen and (max-width: var(--bp-largest)) {
+  @media only screen and (max-width: 75em) {
     html {
       font-size: 50%; } }
 
@@ -246,7 +244,7 @@ input[type='submit']:hover {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem; }
-    @media only screen and (max-width: var(--bp-large)) {
+    @media only screen and (max-width: 59.5em) {
       .footer__lists {
         padding: 0 3rem; } }
     .footer__lists > * {
@@ -297,7 +295,7 @@ input[type='submit']:hover {
   max-width: 120rem;
   margin: 0 auto;
   height: 100vh; }
-  @media only screen and (max-width: 59.5em) {
+  @media only screen and (max-width: 75em) {
     .header-container {
       padding: 0 4rem; } }
 
@@ -318,9 +316,9 @@ input[type='submit']:hover {
   max-width: 120rem;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 3rem; }
-  @media only screen and (max-width: var(--bp-large)) {
+  @media only screen and (max-width: 59.5em) {
     .features-grid {
       padding: 0 3rem; } }
 
@@ -373,7 +371,7 @@ input[type='submit']:hover {
   justify-content: space-around;
   max-width: 100rem;
   margin: 0 auto; }
-  @media only screen and (max-width: var(--bp-largest)) {
+  @media only screen and (max-width: 75em) {
     .plans {
       justify-content: space-between;
       max-width: 70%; } }

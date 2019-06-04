@@ -3,7 +3,7 @@
   margin: 0 auto;
   height: 100vh;
 
-  @media only screen and (max-width: 59.5em) {
+  @media only screen and (max-width: $bp-largest) {
     padding: 0 4rem;
   }
 }
@@ -35,10 +35,10 @@
   max-width: 120rem;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 3rem;
 
-  @media only screen and (max-width: var(--bp-large)) {
+  @media only screen and (max-width: $bp-large) {
     padding: 0 3rem;
   }
 }

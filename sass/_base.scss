@@ -1,10 +1,10 @@
 :root {
   --color-primary: #e67e22;
   --color-primary-darker: #cf6d17;
-
-  --bp-largest: 75em;
-  --bp-large: 59.5em;
 }
+
+$bp-largest: 75em;
+$bp-large: 59.5em;
 
 *,
 *::after,
@@ -25,7 +25,7 @@ html {
   font-weight: 300;
   text-rendering: optimizeLegibility;
 
-  @media only screen and (max-width: var(--bp-largest)) {
+  @media only screen and (max-width: $bp-largest) {
     font-size: 50%;
   }
 }
