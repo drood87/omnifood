@@ -6,6 +6,11 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   grid-gap: 3rem;
+
+  @media only screen and (max-width: $bp-medium-725) {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    padding: 0 2rem;
+  }
 }
 
 .card {

@@ -3,8 +3,17 @@
   --color-primary-darker: #cf6d17;
 }
 
+// BREAKPOINTS
+
 $bp-largest: 75em;
 $bp-large: 59.5em;
+$bp-medium: 50em;
+$bp-medium-725: 45.3125em;
+$bp-small: 41.875em;
+$bp-smaller: 34.375em;
+$bp-smallest: 26.875em; //430px
+
+// BASETYLES
 
 *,
 *::after,

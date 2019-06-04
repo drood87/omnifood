@@ -8,10 +8,23 @@
   max-width: 120rem;
   margin: 0 auto;
 
+  @media only screen and (max-width: $bp-medium) {
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: $bp-smaller) {
+    display: block;
+  }
+
   &__img {
     height: 40rem;
     width: auto;
     margin-right: 7rem;
+
+    @media only screen and (max-width: $bp-smaller) {
+      display: block;
+      margin: 0 auto 2.5rem auto;
+    }
   }
 
   &__works {
@@ -20,11 +33,26 @@
     justify-content: space-evenly;
 
     max-width: 48%;
+
+    @media only screen and (max-width: $bp-smaller) {
+      max-width: 100%;
+      padding: 0 2.5rem;
+    }
   }
 
   &__box {
     display: flex;
     align-items: center;
+
+    @media only screen and (max-width: $bp-smaller) {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  @media only screen and (max-width: $bp-smaller) {
+    &__box:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
   }
 
   &__number {
