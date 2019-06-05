@@ -17,7 +17,8 @@ html {
   color: #555;
   font-family: 'Lato', 'Arial', sans-serif;
   font-weight: 300;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 50%; } }
