@@ -49,25 +49,25 @@ function smoothScroll(target, duration) {
 // NAV ELEMENT LISTENERS
 
 delivery.addEventListener('click', function() {
-  smoothScroll(featuresSection, 1000);
+  smoothScroll(featuresSection, 2000);
 });
 
 howTo.addEventListener('click', function() {
-  smoothScroll(howToSection, 1000);
+  smoothScroll(howToSection, 2000);
 });
 
 cities.addEventListener('click', function() {
-  smoothScroll(citiesSection, 1000);
+  smoothScroll(citiesSection, 2000);
 });
 
 signUp.addEventListener('click', function() {
-  smoothScroll(plansSection, 1000);
+  smoothScroll(plansSection, 2000);
 });
 
 // HEADER BUTTONS ELEMENTS LISTENERS
 
 featuresButton.addEventListener('click', function() {
-  smoothScroll(featuresSection, 1000);
+  smoothScroll(featuresSection, 2000);
 });
 plansButton.addEventListener('click', function() {
   smoothScroll(plansSection, 2000);
