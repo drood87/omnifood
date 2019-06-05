@@ -1,7 +1,21 @@
-const features = document.querySelector('#features');
-const plans = document.querySelector('#plans');
+// BINDING THE SECTIONS
+const featuresSection = document.querySelector('#features');
+const plansSection = document.querySelector('#plans');
+const howToSection = document.querySelector('#howTo');
+const citiesSection = document.querySelector('#cities');
+
+// GRABBING THE BUTTONS
 const featuresButton = document.querySelector('#featuresButton');
 const plansButton = document.querySelector('#plansButton');
+
+// NAV ELEMENTS
+
+const delivery = document.querySelector('#navDelivery');
+const howTo = document.querySelector('#navHowTo');
+const cities = document.querySelector('#navCities');
+const signUp = document.querySelector('#navSignUp');
+
+// SMOOTH SCROLL FUNCTION
 
 function smoothScroll(target, duration) {
   const targetSection = target;
@@ -20,6 +34,8 @@ function smoothScroll(target, duration) {
     if (timeElapsed < duration) requestAnimationFrame(animation);
   }
 
+  // FUNKY EASING FUNCTION WITH A LOT OF MATH
+
   function ease(t, b, c, d) {
     t /= d / 2;
     if (t < 1) return (c / 2) * t * t + b;
@@ -27,12 +43,32 @@ function smoothScroll(target, duration) {
     return (-c / 2) * (t * (t - 2) - 1) + b;
   }
 
-  requestAnimationFrame(animation);
+  requestAnimationFrame(animation); // will animate with 60fps
 }
 
+// NAV ELEMENT LISTENERS
+
+delivery.addEventListener('click', function() {
+  smoothScroll(featuresSection, 1000);
+});
+
+howTo.addEventListener('click', function() {
+  smoothScroll(howToSection, 1000);
+});
+
+cities.addEventListener('click', function() {
+  smoothScroll(citiesSection, 1000);
+});
+
+signUp.addEventListener('click', function() {
+  smoothScroll(plansSection, 1000);
+});
+
+// HEADER BUTTONS ELEMENTS LISTENERS
+
 featuresButton.addEventListener('click', function() {
-  smoothScroll(features, 1000);
+  smoothScroll(featuresSection, 1000);
 });
 plansButton.addEventListener('click', function() {
-  smoothScroll(plans, 2000);
+  smoothScroll(plansSection, 2000);
 });
