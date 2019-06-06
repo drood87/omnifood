@@ -17,7 +17,8 @@ html {
   color: #555;
   font-family: 'Lato', 'Arial', sans-serif;
   font-weight: 300;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 50%; } }
@@ -140,7 +141,7 @@ body {
 .user-nav {
   display: flex;
   justify-content: space-between;
-  word-spacing: 2.5px;
+  word-spacing: 2.3px;
   padding-top: 4rem; }
   .user-nav__logo {
     height: 10rem;
@@ -197,8 +198,6 @@ body {
   .fixed-nav .header .header-container nav .user-nav__logo {
     height: 6rem;
     transition: 0.4s; }
-  .fixed-nav .header .header-container nav .user-nav__logo--expand {
-    height: 14rem; }
   .fixed-nav .header .header-container nav .main-nav {
     align-items: center; }
     .fixed-nav .header .header-container nav .main-nav__link:link, .fixed-nav .header .header-container nav .main-nav__link:visited {
@@ -209,12 +208,15 @@ body {
 .mobile-nav {
   display: none;
   cursor: pointer; }
+  @media only screen and (max-width: 50em) {
+    .mobile-nav-open {
+      display: inline-block; } }
+  @media only screen and (max-width: 50em) {
+    .mobile-nav-close {
+      display: none; } }
   .mobile-nav--icon {
     font-size: 3.4rem;
     color: #fff; }
-  @media only screen and (max-width: 50em) {
-    .mobile-nav {
-      display: inline-block; } }
 
 .slide-in {
   opacity: 0;

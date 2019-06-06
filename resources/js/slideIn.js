@@ -25,7 +25,6 @@ function checkSlides(e) {
     // halfway through the element
     const slideInAt =
       window.scrollY + window.innerHeight - slideImage.offsetHeight / 2;
-    console.log(slideImage.offsetHeight);
 
     //bottom of the element
     const imageBottom = slideImage.offsetTop + slideImage.offsetHeight;
@@ -43,7 +42,6 @@ function checkSlides(e) {
 
 function slideOnClick() {
   sliderImages.forEach(slideElement => {
-    console.log('WORKS');
     slideElement.classList.add('active');
   });
 }
