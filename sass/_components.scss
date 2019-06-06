@@ -140,6 +140,10 @@
   &--icon {
     font-size: 3.4rem;
     color: #fff;
+
+    &-close {
+      animation: rotateAnimation 1s;
+    }
   }
 }
 
@@ -170,4 +174,19 @@
 .slide-in.active {
   transform: translate(0) scale(1);
   opacity: 1;
+}
+
+// ANIMATION
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(180deg);
+  }
+  80% {
+    // transform: translateX(-1rem);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
 }

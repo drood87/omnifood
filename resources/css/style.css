@@ -217,6 +217,8 @@ body {
   .mobile-nav--icon {
     font-size: 3.4rem;
     color: #fff; }
+    .mobile-nav--icon-close {
+      animation: rotateAnimation 1s; }
 
 .slide-in {
   opacity: 0;
@@ -238,6 +240,13 @@ body {
 .slide-in.active {
   transform: translate(0) scale(1);
   opacity: 1; }
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(180deg); }
+  80% { }
+  100% {
+    transform: rotate(0); } }
 
 .contact-form {
   display: grid;
