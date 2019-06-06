@@ -14,7 +14,6 @@
   display: flex;
   justify-content: space-between;
   word-spacing: 2.5px;
-
   padding-top: 4rem;
 
   &__logo {
@@ -38,12 +37,27 @@
   align-items: flex-start;
   list-style: none;
 
+  // style for mobile menu for smaller devices
+
+  &__item:not(:last-child) {
+    @media only screen and (max-width: $bp-medium) {
+      padding-bottom: 1.5rem;
+    }
+  }
+
   &__link:link,
   &__link:visited {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
     font-size: 1.5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.7rem;
+    }
+  }
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
   }
 
   // BORDER BOTTOM MOVING OUTWARDS FROM MIDDLE
@@ -56,6 +70,10 @@
     transform: scaleX(0);
     transition: transform 0.25s ease-in-out;
     padding-top: 8px;
+
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
+    }
   }
 
   &__link:hover::after,
@@ -80,6 +98,11 @@
 
   & .user-nav__logo {
     height: 6rem;
+    transition: 0.4s;
+  }
+
+  & .user-nav__logo--expand {
+    height: 14rem;
   }
 
   & .main-nav {
@@ -89,6 +112,26 @@
     &__link:visited {
       color: #555;
     }
+  }
+
+  & .mobile-nav--icon {
+    color: #000;
+  }
+}
+
+// styles for hamburger menu nav for mobile devices
+
+.mobile-nav {
+  display: none;
+  cursor: pointer;
+
+  &--icon {
+    font-size: 3.4rem;
+    color: #fff;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    display: inline-block;
   }
 }
 

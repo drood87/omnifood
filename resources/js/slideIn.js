@@ -35,7 +35,7 @@ function checkSlides(e) {
     if (isHalfShown && isNotScrolledPast) {
       slideImage.classList.add('active');
     } else {
-      slideImage.classList.remove('active');
+      // slideImage.classList.remove('active');
     }
   });
 }
@@ -54,7 +54,7 @@ window.addEventListener('scroll', debounce(checkSlides));
 
 // EVENT HANDLERS FOR CLICK EVENT ON NAV ELEMENTS
 
-delivery.addEventListener('click', slideOnClick);
+delivery.addEventListener('click', checkSlides);
 
 howTo.addEventListener('click', slideOnClick);
 
