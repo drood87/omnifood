@@ -430,7 +430,7 @@ input[type='submit']:hover {
       padding: 0 4rem; } }
 
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./img/hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./img/hero-min.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -466,7 +466,7 @@ input[type='submit']:hover {
   overflow-x: hidden; }
 
 .section-testimonials {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./img/back-customers.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./img/back-customers-min.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
